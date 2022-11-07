@@ -1,0 +1,27 @@
+#jumbotron{
+    background-image: url("/public/IMG/banner-image.png");
+    background-size: cover;
+    background-position: 72% 12%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 3.25;
+    height: 70vh;
+}
+
+#btn-jumbotron{
+    background-color: #202020;
+    border: none;
+}
+
+#btn-jumbotron:hover{
+   background-color:  #000000;
+}
+
+#jumbotron-txt{
+    padding: 17rem 0;
+    font-size: .5rem;
+}
+
+.jumbotron-sub{
+    font-size: 1rem;
+}

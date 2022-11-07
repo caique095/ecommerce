@@ -1,0 +1,23 @@
+#footer{
+    background-color: #202020;
+    color: #b2b2b2;
+}
+
+#link-footer{
+    color: #b2b2b2;
+}
+
+.dev{
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.signature{
+    font-size: .6rem;
+}
+
+#footer-list{
+    list-style: none;
+
+}

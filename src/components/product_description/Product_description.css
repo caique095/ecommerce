@@ -1,0 +1,31 @@
+#product-description{
+    justify-content: space-between;
+}
+
+#btn-product-description{
+    justify-content: space-between;
+}
+
+#btn-product-description_buy, #btn-product-description_add{
+        text-decoration: none;
+        background-color: #202020;
+        padding: .8rem;
+        color: #fff;
+        border:none;
+}
+
+#btn-product-description_buy:hover, #btn-product-description_add:hover{
+    background-color: #090808;
+}
+
+#btn-product-description_buy{
+    width: 80%;
+}
+
+#btn-product-description_add{
+    width: 18%;
+    background-image: url("/public/IMG/Icone_carrinho/5.svg");
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: center;
+}

@@ -1,0 +1,13 @@
+
+#img-signUp{
+    height: 91.4vh;
+    width: 50vw;
+    background-image: url('../../../public/IMG/cadastro/img-cadastro.png');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+
+#btn-signUp:hover{
+    background-color: #000000;
+}
