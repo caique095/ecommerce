@@ -81,7 +81,7 @@ function Search({ busca, setBusca }: Props){
                 <input 
                     type="text"
                     id="search-bar"
-                    className="w-100 p-3 rounded-pill"
+                    className="w-100 p-3"
                     value={busca}
                     onChange={(e) => setBusca(e.target.value)}
                     placeholder="Pesquisar..."

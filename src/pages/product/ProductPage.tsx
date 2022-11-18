@@ -1,18 +1,14 @@
 import './ProductPage.css';
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
-import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Cards from '../../components/card/Card';
 import Product from '../../components/product/Product';
+import SeeMore from '../../pages/seeMore/seeMore';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import Lista from '../../pages/productList/productList';
 import { useState, useEffect } from "react";
-import { Alert } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; 
 
 function ProductPage() {
   const [ busca, setBusca ] = useState('');
@@ -22,6 +18,7 @@ function ProductPage() {
     <Header />
    
     <section id="ProductPage">
+        <div id="test">
         <Row>
             <Col xs={12} md={6}>
                 <Carousel className="" id="carrossel-img">
@@ -55,16 +52,17 @@ function ProductPage() {
                 
                 <Container className="h-100 d-flex flex-column justify-content-center my-4">
                     <section className="page-product-description" id="page-product-description">
-                        <div className="d-flex" id="product-description">
+                        <div className="d-flex justify-content-between" id="product-description">
                                 <h1 id="product-description_title" className="fw-bold">Produto 1</h1>
                                 <h2 id="product-description_price" className="fw-bold">R$79,90</h2>
                         </div>
 
                         <div className="description">
+                                <h4 className="mt-4">Sobre o produto:</h4>
                                 <span id="product-description_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit add some words.</span>
                         </div>
 
-                        <div className="d-flex my-4" id="btn-product-description">
+                        <div className="d-flex my-4 justify-content-between" id="btn-product-description">
                             <Button id="btn-product-description_add" className="" variant="primary"></Button>
                             <Button id="btn-product-description_buy" variant="primary">Comprar agora</Button>
                         </div>
@@ -72,13 +70,13 @@ function ProductPage() {
                 </Container>
             </Col>
         </Row>
-
+        </div>
     </section>
 
     <>
         <Container>
             <Product />
-            <Lista busca={busca}/>
+            <SeeMore />
         </Container>
     </>    
 

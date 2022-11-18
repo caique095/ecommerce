@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer';
 import Product from '../../components/product/Product';
 import Header from '../../components/header/Header';
 import Lista from '../../pages/productList/productList';
+import Banner from '../../components/banner/Banner';
 import './Home.css';
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
         <Icons />
         <Container>
         <Product />
+        <Banner />
         <Lista busca={busca}/>
         </Container>
         <Footer />

@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     background-position: 98%;
 }
+#search-bar{
+    border-radius: 1rem;
+}
 
 #button-addon2:hover{
     background-color: #ededed;

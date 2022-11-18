@@ -1,11 +1,3 @@
-#product-description{
-    justify-content: space-between;
-}
-
-#btn-product-description{
-    justify-content: space-between;
-}
-
 #btn-product-description_buy, #btn-product-description_add{
         text-decoration: none;
         background-color: #202020;
@@ -33,4 +25,3 @@
 #ProductPage{
     background-color: #f3f3f3;
 }
-
