@@ -1,0 +1,50 @@
+#btn-produto{
+    text-decoration: none;
+    background-color: #202020;
+    padding: .8rem;
+    color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+#btn-produto:hover{
+    background-color: #090808;
+}
+
+#card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#card-produto{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#img-produto{
+    width: 100%;
+    border-radius: .8rem;
+}
+
+#card-title{
+    color: #38b6ff;
+}
+
+#card-title, #btn-produto{
+    font-size: 1.2rem;
+}
+
+#card-text{
+    font-size: 2.5rem;
+}
+
+#card-produto:hover{
+    transform: scale(1.02);
+    transition: all .5s;
+}
+

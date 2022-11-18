@@ -21,7 +21,6 @@ function Cards(props:Produto) {
             <Card.Body className="" id="card-body">
                 <Card.Title id="card-title">{props.nome}</Card.Title>
                 <Card.Text className="fw-bold" id="card-text">{props.preco}</Card.Text>
-               
             </Card.Body>
             <Card.Link as={Link} to="/product" className="btn-produto fw-bold text-center" id="btn-produto">Comprar</Card.Link>
         </Card>

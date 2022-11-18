@@ -1,0 +1,29 @@
+#search-bar, #button-addon2{
+    color: #202020;
+    background-color: #f7f7f7;
+    border: none;
+    outline: none;
+
+    background-image: url('/public/IMG/search.svg');
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+#button-addon2:hover{
+    background-color: #ededed;
+}
+
+#search-bar::placeholder{
+    color: #202020;
+}
+
+#dropdown-basic-button{
+    background-color: #f7f7f7;
+    font-weight: 500;
+    border: none;
+    color:#202020;
+}
+
+#dropdown-basic-button:hover{
+    background-color: #ededed;
+}

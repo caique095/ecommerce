@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import './AllProduct.css';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import Cards from '../../components/card/Card';
-import Search from '../../components/search/Search';
-import Lista from '../../pages/productList/productList';
+import './Search.css';
+
 
 const produtos = [
     {
@@ -58,38 +54,43 @@ const produtos = [
     }
 ]
 
-function AllProducts() {
-    const [ busca, setBusca ] = useState('');
+
+const nomeProdutos = [
+    'Airpods',
+    'Headphone Preto',
+    'Headphone Amarelo',
+    'Airpods Rosa',
+    'Caixa de som',
+    'Smartwatch Vermelho',
+    'fone preto',
+    'Headphone Branco'
+];
+
+interface Props {
+    busca: string;
+    setBusca: React.Dispatch<React.SetStateAction<string>>;
+}
+
+function Search({ busca, setBusca }: Props){
 
     return (
-      
-        <>
-            <Header />
-            <Container>
-            <Search busca={busca} setBusca={setBusca}/>
-                    
-            {/* <div className="row my-5">
-                {
-                    produtos.map(p => (
-                    <div className="col-sm-6 col-md-3">
-                        <Cards 
-                            srcImg={p.srcImg} 
-                            nome={p.nome}  
-                            preco={p.preco} 
-                            url={p.url} />
-                    </div>
-                                ))
-                };
-            </div> */}
-            
-            <Lista busca={busca} />
+        <Container>
 
-            </Container>
+            <section className="d-flex align-items-center mt-4" id="all-search">
 
-            <Footer />
-        </>
+                <input 
+                    type="text"
+                    id="search-bar"
+                    className="w-100 p-3 rounded-pill"
+                    value={busca}
+                    onChange={(e) => setBusca(e.target.value)}
+                    placeholder="Pesquisar..."
+                />
 
-    ); 
-  }
+            </section>
 
-  export default AllProducts;
+        </Container>
+    );
+}
+
+export default Search;

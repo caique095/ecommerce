@@ -1,0 +1,50 @@
+[
+    {
+        "nome": "Airpods",
+        "srcImg": "/IMG/Produtos/1.png",    
+        "preco":"R$ 99,00", 
+        "url":""
+    },
+    {
+        "nome": "Headphone Preto",
+        "srcImg": "/IMG/Produtos/3.png",    
+        "preco":"R$ 42,00", 
+        "url":""
+    },
+    {
+        "nome": "Headphone Amarelo",
+        "srcImg": "/IMG/Produtos/7.png",    
+        "preco":"R$ 50,00", 
+        "url":""
+    },
+    {
+        "nome": "Airpods Rosa",
+        "srcImg": "/IMG/Produtos/8.png",    
+        "preco":"R$ 69,00", 
+        "url":""
+    },
+    {
+        "nome": "Caixa de som",
+        "srcImg": "/IMG/Produtos/4.png",    
+        "preco":"R$ 90,00", 
+        "url":""
+    },
+    {
+        "nome": "Smartwatch Vermelho",
+        "srcImg": "/IMG/Produtos/5.png",    
+        "preco":"R$ 159,00", 
+        "url":""
+    },
+    {
+        "nome": "Fone Preto",
+        "srcImg": "/IMG/Produtos/6.png",    
+        "preco":"R$ 60,00", 
+        "url":""
+    },
+    {
+        "nome": "Headphone Branco",
+        "srcImg": "/IMG/Produtos/2.png",    
+        "preco":"R$ 80,00", 
+        "url":""
+    }
+]
