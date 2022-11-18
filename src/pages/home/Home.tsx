@@ -22,6 +22,10 @@ function Home() {
         <Container>
         <Product />
         <Banner />
+        <div className="d-flex flex-column justify-content-center align-center text-center mt-5">
+          <h1 className="fw-bold">Produtos mais vendidos</h1>
+          <span>Confira produtos selecionados para você.</span>
+        </div>
         <Lista busca={busca}/>
         </Container>
         <Footer />
