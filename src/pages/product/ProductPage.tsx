@@ -9,19 +9,34 @@ import SeeMore from '../../pages/seeMore/seeMore';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import { useState, useEffect } from "react";
+import Slide from '../../components/slideProductPage/slideProductPage';
+import { SwiperSlide } from 'swiper/react'; 
+import CardSlider from '../../components/carroussels/CardCarroussel';
+
 
 function ProductPage() {
+  
+    const settings = {
+    spaceBetween: 50,
+    slidesPerView: 3,
+    navigation: true,
+    pagination: {
+        clickable: true,
+
+    },
+  };
+
   const [ busca, setBusca ] = useState('');
   return (
     <>    
 
-    <Header />
-   
+    <Header />   
     <section id="ProductPage">
         <div id="test">
         <Row>
             <Col xs={12} md={6}>
-                <Carousel className="" id="carrossel-img">
+                    
+                {/* <Carousel className="" id="carrossel-img">
                 <Carousel.Item>
                     <img
                     className="d-block w-100" id="carrossel-img"
@@ -46,7 +61,7 @@ function ProductPage() {
                     />
 
                 </Carousel.Item>
-                </Carousel>
+                </Carousel> */}
             </Col>
             <Col xs={12} md={6}>
                 
@@ -76,10 +91,9 @@ function ProductPage() {
     <>
         <Container>
             <Product />
-            <SeeMore />
+            <CardSlider />
         </Container>
     </>    
-
     <Footer />
 
 </>

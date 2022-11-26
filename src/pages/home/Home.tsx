@@ -10,6 +10,7 @@ import Header from '../../components/header/Header';
 import Lista from '../../pages/productList/productList';
 import Banner from '../../components/banner/Banner';
 import './Home.css';
+import BannerCashBack from '../../components/banner/BannerCashBack';
 
 function Home() {
     const [ busca, setBusca ] = useState('');
@@ -27,6 +28,7 @@ function Home() {
           <span>Confira produtos selecionados para você.</span>
         </div>
         <Lista busca={busca}/>
+        <BannerCashBack />
         </Container>
         <Footer />
         

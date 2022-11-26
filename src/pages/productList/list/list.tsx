@@ -1,4 +1,3 @@
-import Cards from '../../../components/card/Card'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import productList from '../productList.json';
