@@ -7,7 +7,6 @@ type Props = typeof productList[0];
 
 function List(props: Props){
     const { nome, srcImg, preco, url } = props;
-
     return (
              <>
                 <Card id="card-produto" className="m-3">

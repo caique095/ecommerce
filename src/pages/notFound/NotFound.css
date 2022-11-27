@@ -1,0 +1,40 @@
+#img-not_found{
+    width: 93vw;
+}
+
+#not_found{
+    
+}
+
+#not_found-img{
+}
+
+#not_found-txt_link{
+    background-color: #202020;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .3rem;
+    text-decoration: none;
+}
+
+#not_found-titulo{
+    font-size: 3rem;    
+}
+
+#not_found-txt{
+    font-size: 1rem;
+}
+
+.not_found-404{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+    #not_found{
+       display: flex;
+    }
+
+    #img-not_found{
+        width: 23rem;
+    }
+}

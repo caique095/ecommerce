@@ -7,15 +7,30 @@ import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
 function CardSlider () {
     const settings: SwiperProps = {
         spaceBetween: 50,
-        slidesPerView: 3,
         navigation: true,
-        pagination:true,
+        pagination: true && {
+            clickable: true,
+        },
         draggable: true,
         loop: true,
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            800: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            }
+        }
     };
 
     let produtosRecomendados = [...productList];
-    produtosRecomendados = produtosRecomendados.sort(() => 0.5 - Math.random()).splice(0,4);
+    produtosRecomendados = produtosRecomendados.sort(() => 0.5 - Math.random()).splice(0,8);
 
     return(
         <Slide settings={settings}>

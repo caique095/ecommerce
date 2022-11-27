@@ -36,7 +36,7 @@ function ProductPage() {
         <Row>
             <Col xs={12} md={6}>
                     
-                {/* <Carousel className="" id="carrossel-img">
+                <Carousel className="" id="carrossel-img">
                 <Carousel.Item>
                     <img
                     className="d-block w-100" id="carrossel-img"
@@ -61,7 +61,7 @@ function ProductPage() {
                     />
 
                 </Carousel.Item>
-                </Carousel> */}
+                </Carousel> *
             </Col>
             <Col xs={12} md={6}>
                 
@@ -91,6 +91,10 @@ function ProductPage() {
     <>
         <Container>
             <Product />
+            <div className="d-flex flex-column justify-content-center align-center text-center my-2">
+              <h1 className="fw-bold">Ver também</h1>
+              <span>Veja abaixo produtos selecionados para você.</span>
+            </div>
             <CardSlider />
         </Container>
     </>    
