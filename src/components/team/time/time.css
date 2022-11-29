@@ -1,0 +1,21 @@
+#time{
+    width: 100%;
+}
+
+#time-img{
+    width: 100%;
+    border-radius: .4rem;
+}
+
+.time-titulo{
+    font-size: 1.1rem;
+}
+
+.time-texto{
+    font-size: 1.1rem;
+    margin-top: -.50rem;
+}
+
+
+
+

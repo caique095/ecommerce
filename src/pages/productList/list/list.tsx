@@ -1,12 +1,20 @@
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import { Link, useNavigate } from 'react-router-dom';
 import productList from '../productList.json';
 import './list.css';
 
 type Props = typeof productList[0];
 
 function List(props: Props){
-    const { nome, srcImg, preco, url } = props;
+    const { nome, srcImg, srcImgDois, srcImgTres, preco } = props;
+
+
+    const navigate = useNavigate();
+function ComprarProduto(produto: typeof productList[0]) {
+    navigate(`/allproduct/${produto.nome}`, { state: { produto } });
+}
+
     return (
              <>
                 <Card id="card-produto" className="m-3">
@@ -15,7 +23,7 @@ function List(props: Props){
                         <Card.Title id="card-title"> {nome} </Card.Title>
                         <Card.Text className="fw-bold" id="card-text">{preco}</Card.Text>
                     </Card.Body>
-                    <Card.Link as={Link} to="/product" className="btn-produto fw-bold text-center" id="btn-produto">Comprar</Card.Link>
+                    <Button className="btn-produto fw-bold text-center" id="btn-produto" onClick={() => ComprarProduto(props)}>Comprar </Button>
                 </Card>
             </>
     )

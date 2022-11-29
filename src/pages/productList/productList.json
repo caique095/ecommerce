@@ -1,50 +1,72 @@
 [
     {
-        "nome": "Airpods",
-        "srcImg": "/IMG/Produtos/1.png",    
+        "nome": "Fone Branco",
+        "srcImg": "/IMG/Produtos/airpods/1.png",
+        "srcImgDois": "/IMG/Produtos/airpods/2.png",    
+        "srcImgTres": "/IMG/Produtos/airpods/3.png",
         "preco":"R$ 99,00", 
-        "url":""
-    },
-    {
-        "nome": "Headphone Preto",
-        "srcImg": "/IMG/Produtos/3.png",    
-        "preco":"R$ 42,00", 
-        "url":""
-    },
-    {
-        "nome": "Headphone Amarelo",
-        "srcImg": "/IMG/Produtos/7.png",    
-        "preco":"R$ 50,00", 
-        "url":""
-    },
-    {
-        "nome": "Airpods Rosa",
-        "srcImg": "/IMG/Produtos/8.png",    
-        "preco":"R$ 69,00", 
-        "url":""
-    },
-    {
-        "nome": "Caixa de som",
-        "srcImg": "/IMG/Produtos/4.png",    
-        "preco":"R$ 90,00", 
-        "url":""
-    },
-    {
-        "nome": "Smartwatch Vermelho",
-        "srcImg": "/IMG/Produtos/5.png",    
-        "preco":"R$ 159,00", 
-        "url":""
+        "url":"",
+        "descricao": "O fone que une toda a liberdade da experiência sem fios, com ótima qualidade de som e um preço que nem precisa falar, né?"
     },
     {
         "nome": "Fone Preto",
-        "srcImg": "/IMG/Produtos/6.png",    
-        "preco":"R$ 60,00", 
-        "url":""
+        "srcImg": "/IMG/Produtos/headphone_preto/1.png",    
+        "srcImgDois": "/IMG/Produtos/headphone_preto/2.png",
+        "srcImgTres": "/IMG/Produtos/headphone_preto/3.png",
+        "preco":"R$ 42,00", 
+        "url":"",
+        "descricao": "Muito conforto e qualidade de som nesse super fone de ouvido que com certeza vai te surpreender."
     },
     {
-        "nome": "Headphone Branco",
-        "srcImg": "/IMG/Produtos/2.png",    
-        "preco":"R$ 80,00", 
-        "url":""
+        "nome": "Fone Amarelo",
+        "srcImg": "/IMG/Produtos/headphone_amarelo/1.png",
+        "srcImgDois": "/IMG/Produtos/headphone_amarelo/2.png",    
+        "srcImgTres": "/IMG/Produtos/headphone_amarelo/3.png",
+        "preco":"R$ 50,00", 
+        "url":"",
+        "descricao": "Fone de ouvido com uma incrível experiência sem fios e ótima qualidade de som, que chama atenção por onde passa com essa linda cor amarela."
+    },
+    {
+        "nome": "Fone Rosa",
+        "srcImg": "/IMG/Produtos/airpods_rosa/1.png",    
+        "srcImgDois": "/IMG/Produtos/airpods_rosa/2.png",
+        "srcImgTres": "/IMG/Produtos/airpods_rosa/3.png",
+        "preco":"R$ 69,00", 
+        "url":"",
+        "descricao": "Este lindo fone cor de rosa, une uma ótima qualidade de som e liberdade sem fios com muito estilo, ou seja: O melhor dos dois mundos!"
+    },
+    {
+        "nome": "Caixa de som",
+        "srcImg": "/IMG/Produtos/caixa_de_som/1.png",    
+        "srcImgDois": "/IMG/Produtos/caixa_de_som/2.png",    
+        "srcImgTres": "/IMG/Produtos/caixa_de_som/3.png",    
+        "preco":"R$ 90,00", 
+        "url": "",
+        "descricao": "Nada melhor do que uma caixa de som super potente pra curtir aquele churrasquinho com os amigos ou pra dar um role na praia, né?"
+    },
+    {
+        "nome": "Smartwatch Vermelho",
+        "srcImg": "/IMG/Produtos//smartwatch/1.png",    
+        "srcImgDois": "/IMG/Produtos//smartwatch/2.png",   
+        "srcImgTres": "/IMG/Produtos//smartwatch/3.png",   
+        "preco":"R$ 99,00", 
+        "url":"",
+        "descricao": "O Smartwatch te ajuda quando vc tá na rua e não quer tirar o celular da mochila/bolsa, já que ele te da acesso à diversas informações como ligações, SMS, notificações das redes sociais, vc consegue trocar de música e ajustar volume do som e muito mais!"
+    },
+    {
+        "nome": "Fone Preto",
+        "srcImg": "/IMG/Produtos/airdots/3.png",   
+        "srcImgDois": "/IMG/Produtos/airdots/2.png",
+        "srcImgTres": "/IMG/Produtos/airdots/1.png", 
+        "preco":"R$ 60,00", 
+        "descricao": "Ele possui som limpo e de alta qualidade, cancelamento de ruído, um design lindo e é muito prático de usar."
+    },
+    {
+        "nome": "Fone Azul",
+        "srcImg": "/IMG/Produtos/fone_azul/3.png",    
+        "srcImgDois": "/IMG/Produtos/fone_azul/2.png",
+        "srcImgTres": "/IMG/Produtos/fone_azul/1.png",
+        "preco":"R$ 80,00",
+        "descricao": "Fone de ouvido com uma excelente qualidade de som e conforto pra vc que não ama curtir aquele som irado!"
     }
 ]

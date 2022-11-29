@@ -18,10 +18,7 @@
 
 #link-pagina_txt{
     font-size: 1rem;
-    text-transform: uppercase;
 }
-
-
 
 .cta {
     border: none;
@@ -40,6 +37,17 @@
     transition: all 0.3s ease;
   }
   
+  .cta-text{
+    text-decoration: none;
+    color: #202020;
+    margin-right: .8rem;
+    font-size: 1rem;
+  }
+
+  .cta-text:hover{
+    color: #000000;
+  }
+
   .cta:hover svg {
     transform: translateX(0);
   }

@@ -1,12 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Card.css';
 import { Link } from 'react-router-dom';
 
 export interface Produto {
     srcImg: string;
+
     nome: string;
     preco: string;
     url: string;

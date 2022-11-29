@@ -2,8 +2,6 @@ import React from 'react';
 import './Login.css';
 import { BrowserRouter as Router, Routes, Route,  Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import Alert from 'react-bootstrap/Alert'
 import Form from 'react-bootstrap/Form';
 import { FormText } from 'react-bootstrap';
@@ -14,7 +12,6 @@ function Login() {
   return (
 
         <>
-            <Header />
             <section className="d-flex" id="page-signUp">
 
                 <aside className="img d-none d-sm-block justify-content-center align-items-center" id="img-signUp">
@@ -47,7 +44,6 @@ function Login() {
                 </article>
             
             </section>
-            <Footer />
 
         </>
 

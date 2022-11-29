@@ -21,6 +21,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+          <Route path ='allproduct/:id' element={<ProductPage />} />
           <Route path='*' element={<NotFound />} />
           <Route path="/login"element={<Login />} />
           <Route path="/signUp"element={<SignUp />} />

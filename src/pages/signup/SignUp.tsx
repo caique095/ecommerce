@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Routes, Route,  Link } from "react-router-dom"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { FormText } from 'react-bootstrap';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import Alert from 'react-bootstrap/Alert'
 
 
@@ -13,8 +11,6 @@ function SignUp() {
   return (
 
         <>
-            <Header />
-
             <section className="d-flex" id="page-signUp">
 
                 <aside className="img d-none d-sm-block justify-content-center align-items-center" id="img-signUp">
@@ -26,7 +22,7 @@ function SignUp() {
                         <h1 className="my-4">Cadastre-se agora!</h1>
                         <Form.Group className="mb-3 fw-semibold" controlId="formBasicPassword">
                             <Form.Label>Nome</Form.Label>
-                            <Form.Control type="password" placeholder="Digite seu nome" />
+                            <Form.Control type="text" placeholder="Digite seu nome" />
                         </Form.Group>
 
                         <Form.Group className="mb-3 fw-semibold" controlId="formBasicEmail">
@@ -55,8 +51,6 @@ function SignUp() {
                 </article>
 
             </section>
-            <Footer />
-
         </>
 
   );

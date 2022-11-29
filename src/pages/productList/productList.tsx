@@ -22,14 +22,11 @@ function testaBusca(nome: string) {
         setLista(novaLista);
     }, [busca]);
 
-    let produtosRecomendados = [...lista];
-    produtosRecomendados = produtosRecomendados.sort(() => 0.5 - Math.random()).splice(0,4);
-
 return (
     <Container>
         <div className="row my-5">
-            {produtosRecomendados.map((item) => (
-                <div className="col-sm-6 col-md-3">
+            {lista.map((item) => (
+                <div className="col-6 col-xl-3">
                     <List key={item.nome} {...item} />
                 </div>
             ))};

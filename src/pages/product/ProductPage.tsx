@@ -5,13 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Product from '../../components/product/Product';
-import SeeMore from '../../pages/seeMore/seeMore';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import { useState, useEffect } from "react";
-import Slide from '../../components/slideProductPage/slideProductPage';
-import { SwiperSlide } from 'swiper/react'; 
 import CardSlider from '../../components/carroussels/CardCarroussel';
+import { useLocation } from 'react-router-dom';
+import productList from '../productList/productList.json';
 
 
 function ProductPage() {
@@ -26,11 +23,12 @@ function ProductPage() {
     },
   };
 
+  const { state } = useLocation();
+  const { produto } = state as {produto: typeof productList[0]};
+
   const [ busca, setBusca ] = useState('');
   return (
     <>    
-
-    <Header />   
     <section id="ProductPage">
         <div id="test">
         <Row>
@@ -40,7 +38,7 @@ function ProductPage() {
                 <Carousel.Item>
                     <img
                     className="d-block w-100" id="carrossel-img"
-                    src="/IMG/Produtos/airpods/1.png"
+                    src={produto.srcImg}
                     alt="First slide"
                     />
 
@@ -48,7 +46,7 @@ function ProductPage() {
                 <Carousel.Item>
                     <img
                     className="d-block w-100" id="carrossel-img"
-                    src="/IMG/Produtos/airpods/2.png"
+                    src={produto.srcImgDois}
                     alt="Second slide"
                     />
 
@@ -56,7 +54,7 @@ function ProductPage() {
                 <Carousel.Item>
                     <img
                     className="d-block w-100" id="carrossel-img"
-                    src="/IMG/Produtos/airpods/3.png"
+                    src={produto.srcImgTres}
                     alt="Third slide"
                     />
 
@@ -68,13 +66,13 @@ function ProductPage() {
                 <Container className="h-100 d-flex flex-column justify-content-center my-4">
                     <section className="page-product-description" id="page-product-description">
                         <div className="d-flex justify-content-between" id="product-description">
-                                <h1 id="product-description_title" className="fw-bold">Produto 1</h1>
-                                <h2 id="product-description_price" className="fw-bold">R$79,90</h2>
+                                <h1 id="product-description_title" className="fw-bold">{produto.nome}</h1>
+                                <h2 id="product-description_price" className="fw-bold">{produto.preco}</h2>
                         </div>
 
                         <div className="description">
                                 <h4 className="mt-4">Sobre o produto:</h4>
-                                <span id="product-description_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit add some words.</span>
+                                <span id="product-description_text">{produto.descricao}</span>
                         </div>
 
                         <div className="d-flex my-4 justify-content-between" id="btn-product-description">
@@ -98,7 +96,6 @@ function ProductPage() {
             <CardSlider />
         </Container>
     </>    
-    <Footer />
 
 </>
 

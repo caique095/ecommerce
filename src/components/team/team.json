@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Bruna Castello",
+        "srcImg": "/IMG/Time/time1080/Bruna.png",    
+        "cargo":"Programadora", 
+        "descricao":"Bruna cria todos os nossos projetos."
+    },
+    {
+        "nome": "Fernando Miguel",
+        "srcImg": "/IMG/Time//time1080/Fernando.png",    
+        "cargo":"Comercial", 
+        "descricao":"Fernando é responsável por captar novos clientes"
+    },
+    {
+        "nome": "Danilo Oliveira",
+        "srcImg": "/IMG/Time//time1080/Danilo.png",    
+        "cargo":"Financeiro", 
+        "descricao":"Danilo ajuda a controlar nossas despesas e receitas"
+    },   
+    {
+        "nome": "Manu Tavares",
+        "srcImg": "/IMG/Time//time1080/Manu.png",    
+        "cargo":"Diretora", 
+        "descricao":"Manu organiza e controla as atividades da empresa"
+    }
+]
