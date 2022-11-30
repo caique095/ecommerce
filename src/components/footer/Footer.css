@@ -4,7 +4,8 @@
 }
 
 #link-footer{
-    color: #b2b2b2;
+    padding: 0 0 1rem 0;
+    border-bottom: .10px solid #7a7a7a;
 }
 
 .dev{
@@ -14,7 +15,7 @@
 }
 
 #social-media_link{
-    border-bottom: 1px solid #2a2a2a;
+
 }
 
 .signature{
@@ -24,4 +25,16 @@
 #footer-list{
     list-style: none;
 
+}
+
+#contato-footer{
+    text-decoration: none;
+    color: #cbc8c8;
+    font-size: .96rem;
+}
+
+#footer-contato_titulo{
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: 4px;
 }
