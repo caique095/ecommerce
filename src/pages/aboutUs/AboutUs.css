@@ -1,0 +1,28 @@
+#nossa_missao{
+    font-size: 1.8rem;
+}
+
+#nossa_missao-span{
+    font-weight: 600;
+}
+
+#contato{
+    background-color: #f8f8f8;
+}
+
+#contato-titulo{
+    font-size: 1.5rem;
+}
+
+#contato-img{
+    width: 20rem;
+}
+
+#contato-textos{
+    margin: 0 4rem;
+}
+
+#contato-msg{
+    text-decoration: none;
+    font-weight: 500;
+}
