@@ -31,7 +31,7 @@ function App() {
           <Route path="/quemsomos" element={<ProductPage/>} />
           <Route path="/" element={<Home/>} />
        </Routes>
-       <Footer />
+      <Footer />
   </Router>
   );
 }

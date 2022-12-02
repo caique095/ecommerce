@@ -11,3 +11,21 @@
 #btn-signUp:hover{
     background-color: #000000;
 }
+
+#error{
+    color: #f95252;
+}
+
+#bg-color_error{
+    color:red;
+}
+
+#btn-password{
+    outline: none;
+    border: 1px solid #d3d3d3;
+    padding: 0 1rem;
+}
+
+#btn-password:hover{
+    background-color: #c9c8c8;
+}

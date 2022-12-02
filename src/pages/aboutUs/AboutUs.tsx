@@ -20,7 +20,7 @@ function AboutUs() {
 
                     <section id="time">
                         <section id="time" className="d-flex justify-content-center align-center my-4">
-                            <h1 className="fw-bold my-4" id="time-titulo">Nosso time:</h1>  
+                            <h1 className="fw-semibold my-4" id="time-titulo">Nosso time:</h1>  
                         </section>
                         <section className="">
                             <Team />
@@ -30,7 +30,7 @@ function AboutUs() {
                 
                 <section id="contato" className="">
                     <section className="d-flex justify-content-center align-center my-4">
-                        <h1 className="fw-bold">Contato:</h1> 
+                        <h1 className="fw-semibold mt-4">Contato:</h1> 
                     </section>
                         
                     <section className="d-md-flex justify-content-around align-items-center">

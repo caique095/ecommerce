@@ -10,7 +10,6 @@ import Banner from '../../components/banner/Banner';
 import BannerCashBack from '../../components/banner/BannerCashBack';
 import './Home.css';
 
-
 function Home() {
     const [ busca, setBusca ] = useState('');
   return (

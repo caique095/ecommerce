@@ -18,7 +18,7 @@ import imgYoutube from './social/youtube.svg';
 function Footer() {
     return (
 
-        <section className="mt-5 text-center" id='footer'>
+        <section className="text-center" id='footer'>
             
                 <img
                 src="/IMG/Logo.svg"
