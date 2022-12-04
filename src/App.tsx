@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+
+// Components
 import Home from './pages/home/Home';
 import ProductPage from './pages/product/ProductPage';
 import AllProducts from './pages/allProduct/AllProduct';
@@ -9,12 +11,9 @@ import Login from './pages/login/Login';
 import NotFound from './pages/notFound/NotFound';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+
+// React Router Dom
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (

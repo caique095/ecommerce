@@ -10,7 +10,7 @@ import Alert from 'react-bootstrap/Alert'
 import InputGroup from 'react-bootstrap/InputGroup';
 
 // React Router Dom
-import { BrowserRouter as Router, Routes, Route,  Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,  Link, useNavigate } from "react-router-dom";
 
 // React Hook Form 
 import { useForm } from "react-hook-form";
@@ -41,13 +41,27 @@ const schema = yup.object({
         .oneOf([yup.ref('password'), null], 'Senhas não correspondem.'),
 })
 
+
 function SignUp() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const navigate = useNavigate();
+
     const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
         resolver: yupResolver(schema)
       });
     const onSubmit = (data: IFormInputs) => console.log(data);
     
     console.log(errors)    
+
+function armazenar() {
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+    return navigate('/login');
+
+    }
 
   return (
 
@@ -69,13 +83,15 @@ function SignUp() {
 
                         <Form.Group className="mb-3 fw-semibold" controlId="formBasicEmail">
                             <Form.Label>E-mail</Form.Label>
-                            <Form.Control type="email" placeholder="Digite seu e-mail" {...register("email")} />
+                            <Form.Control type="email" placeholder="Digite seu e-mail" {...register("email")} 
+                                onChange={(e) => setEmail(e.target.value)} />
                             <Form.Text id="error"> {errors.email?.message} </Form.Text>
                         </Form.Group>
 
                         <Form.Group className="mb-3 fw-semibold" controlId="formBasicPassword">
                             <Form.Label>Senha</Form.Label>
-                            <Form.Control type="password" placeholder="Digite sua senha" {...register("password")} />
+                            <Form.Control type="password" placeholder="Digite sua senha" {...register("password")} 
+                                onChange={(e) => setPassword(e.target.value)} />
                             <Form.Text id="error"> {errors.password?.message} </Form.Text>
                         </Form.Group>
 
@@ -87,6 +103,7 @@ function SignUp() {
 
                         <Button id="btn-signUp" className="w-100" variant="dark" 
                         type="submit"
+                        onClick = {armazenar}
                         >
                             Cadastro
                         </Button>
