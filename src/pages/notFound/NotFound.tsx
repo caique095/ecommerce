@@ -1,9 +1,13 @@
 import './NotFound.css'
 import img from './error_img.png';
-import Container from 'react-bootstrap/Container';
 
-import { BrowserRouter as Router, Routes, Route,  Link } from "react-router-dom";
+// React Bootstrap
+import Container from 'react-bootstrap/Container';
 import Alert from 'react-bootstrap/Alert'
+
+// React router dom 
+import { BrowserRouter as Router, Routes, Route,  Link } from "react-router-dom";
+
 
 
 function NotFound() {

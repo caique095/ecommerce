@@ -9,7 +9,7 @@ function BannerCashBack() {
 
   return (
     <>
-        <section className="d-flex justify-content-around text-center align-center" id="primeiro_banner">
+        <section className="d-flex justify-content-around text-center align-center mb-4" id="primeiro_banner">
             <img src={photoBanner} id="banner_image"/>
             <div className="d-flex flex-column justify-content-center mx-2" id="primeiro-banner_div">
                 <h1 className="primeiro-banner_titulo">GAMES</h1>

@@ -12,7 +12,7 @@ function Banner() {
             <div className="d-flex flex-column justify-content-center align-center mx-3" id="primeiro-banner_div">
                 <h1 className="primeiro-banner_titulo">PROMOÇÃO</h1>
                 <span id="primeiro-banner_texto" className="fw-semibold" >Lorem ipsum dolor.</span>
-                <Alert.Link as={Link} to="/product" className="btn-produto fw-bold text-center mx-3 mt-2" id="primeiro-banner_btn">Comprar </Alert.Link>
+                <Alert.Link as={Link} to="/allproduct" className="btn-produto fw-bold text-center mx-3 mt-2" id="primeiro-banner_btn">Ver mais </Alert.Link>
             </div>
             <div>
                 <img src={photoDois} id="primeiro-banner_image"/>

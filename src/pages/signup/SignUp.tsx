@@ -45,6 +45,7 @@ const schema = yup.object({
 function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    let [success, setSuccess] = useState("");
 
     const navigate = useNavigate();
 
@@ -58,9 +59,7 @@ function SignUp() {
 function armazenar() {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-
-    return navigate('/login');
-
+    
     }
 
   return (
@@ -72,8 +71,10 @@ function armazenar() {
                     
                 </aside>
 
-                <article className="w-100 d-flex justify-content-center align-items-center mb-4" id="form-signUp">
+                <article className="w-100 d-flex justify-content-center align-items-center m-4" id="form-signUp">
+
                     <Form onSubmit={handleSubmit(onSubmit)}>
+
                         <h1 className="my-4">Cadastre-se agora!</h1>
                         <Form.Group className="mb-3 fw-semibold" controlId="formBasicPassword">
                             <Form.Label>Nome</Form.Label>
@@ -101,7 +102,7 @@ function armazenar() {
                             <Form.Text id="error"> {errors.confirmPassword?.message} </Form.Text>
                         </Form.Group>
 
-                        <Button id="btn-signUp" className="w-100" variant="dark" 
+                        <Button id="btn-signUp" className="w-100 mb-1" variant="dark" 
                         type="submit"
                         onClick = {armazenar}
                         >
@@ -110,7 +111,7 @@ function armazenar() {
                         <Form.Text className="text-muted">
                             Já tem uma conta? <Alert.Link as={Link} to="/login">Entre agora.</Alert.Link>
                         </Form.Text>
-
+                        
                     </Form>
     
                 </article>

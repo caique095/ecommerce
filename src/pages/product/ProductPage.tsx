@@ -39,7 +39,7 @@ function ProductPage() {
                     <img
                     className="d-block w-100" id="carrossel-img"
                     src={produto.srcImg}
-                    alt="First slide"
+                    alt="Foto do produto"
                     />
 
                 </Carousel.Item>
@@ -47,7 +47,7 @@ function ProductPage() {
                     <img
                     className="d-block w-100" id="carrossel-img"
                     src={produto.srcImgDois}
-                    alt="Second slide"
+                    alt="Foto do produto"
                     />
 
                 </Carousel.Item>
@@ -55,7 +55,7 @@ function ProductPage() {
                     <img
                     className="d-block w-100" id="carrossel-img"
                     src={produto.srcImgTres}
-                    alt="Third slide"
+                    alt="Foto do produto"
                     />
 
                 </Carousel.Item>
@@ -93,6 +93,7 @@ function ProductPage() {
               <h1 className="fw-bold">Ver também</h1>
               <span>Veja abaixo produtos selecionados para você.</span>
             </div>
+            
             <CardSlider />
         </Container>
     </>    

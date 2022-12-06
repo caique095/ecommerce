@@ -24,6 +24,7 @@ import * as yup from "yup";
 interface IFormInputs {
     email: string;
     password: string;
+    error_input: string;
   };
 
 const schema = yup.object({
@@ -39,6 +40,7 @@ const schema = yup.object({
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    let [errorInput, setErrorInput] = useState("");
 
     const navigate = useNavigate();
 
@@ -51,13 +53,13 @@ function Login() {
 
         const login = localStorage.getItem("email");
         const senha = localStorage.getItem("password");
-        console.log(login);
-        console.log(senha);
         
-        if (email === login && password === senha) {
-           return navigate('/');
+        if (email === '' && password === '' || (email === '' || password === '')) {
+            setErrorInput ("Ops, algum campo está vazio.");
+        } else if (email === login && password === senha) {
+            return navigate('/');
         } else {
-            alert('Usuário não cadastrado')
+            setErrorInput ("Login ou senha inválidos.");
         }
     }
 
@@ -65,12 +67,12 @@ function Login() {
 
         <>
             <section className="d-flex" id="page-signUp">
-
+               
                 <aside className="img d-none d-sm-block justify-content-center align-items-center" id="img-signUp">
                         
                 </aside>
 
-                <article className="w-100 d-flex justify-content-center align-items-center" id="form-signUp">
+                <article className="w-100 d-flex justify-content-center align-items-center m-4" id="form-signUp">
                     <Form onSubmit={handleSubmit(onSubmit)}>
                         <h1 className="my-4">Olá, bem vindo!</h1>
 
@@ -90,7 +92,7 @@ function Login() {
                         </Form.Group>
 
 
-                        <Button id="btn-signUp" className="w-100" variant="dark" type="submit"
+                        <Button id="btn-signUp" className="w-100 mb-1" variant="dark" type="submit"
                             onClick = {checkLogin}>
                             Entrar
                         </Button>
@@ -98,9 +100,9 @@ function Login() {
                             Ainda não tem uma conta? <Alert.Link as={Link} to="/signUp">Faça já seu cadastro.</Alert.Link>
                         </Form.Text>
                         <br />
+                        <Form.Text id="error" className="fw-semibold"> { errorInput } </Form.Text>
                     </Form>
                 </article>
-            
             </section>
 
         </>

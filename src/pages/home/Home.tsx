@@ -13,9 +13,8 @@ import './Home.css';
 function Home() {
     const [ busca, setBusca ] = useState('');
   return (
-    <section id="main">
+    <section id="main mb-4">
         <Jumbotron />
-        <Icons />
         <Container>
             <Product />
             <Banner />
@@ -24,7 +23,6 @@ function Home() {
               <span>Confira produtos selecionados para você.</span>
             </div>
             <Lista busca={busca}/>
-            <BannerCashBack />
         </Container>
     </section>
   );

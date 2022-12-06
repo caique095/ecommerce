@@ -1,7 +1,11 @@
 import './team.css';
-import team from '../team/team.json';
 import { useState } from "react";
+
+// Components
 import Time from '../../components/team/time/time';
+import team from '../team/team.json';
+
+// React Bootstrap
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';

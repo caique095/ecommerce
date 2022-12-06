@@ -12,6 +12,10 @@
     border-radius: 1rem;
 }
 
+input::placeholder{
+
+}
+
 #button-addon2:hover{
     background-color: #ededed;
 }

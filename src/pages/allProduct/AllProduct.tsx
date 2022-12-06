@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
 import './AllProduct.css';
+
+// React Bootstrap
+import Container from 'react-bootstrap/Container';
+
+// Components e Pages
 import Footer from '../../components/footer/Footer';
 import Cards from '../../components/card/Card';
 import Search from '../../components/search/Search';
