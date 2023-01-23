@@ -28,7 +28,7 @@ function AboutUs() {
                         <section id="time" className="d-flex justify-content-center align-center my-4">
                             <h1 className="fw-semibold my-4" id="time-titulo">Nosso time:</h1>  
                         </section>
-                        <section className="">
+                        <section className="oi">
                             <Team />
                         </section>
                     </section>

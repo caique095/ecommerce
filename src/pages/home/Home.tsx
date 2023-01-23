@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from '../../components/jumbotron/Jumbotron';
 import Cards from '../../components/card/Card';
-import Icons from '../../components/icons/Icons';
 import Product from '../../components/product/Product';
 import Lista from '../../pages/productList/productList';
 import Banner from '../../components/banner/Banner';
@@ -12,6 +11,7 @@ import './Home.css';
 
 function Home() {
     const [ busca, setBusca ] = useState('');
+    const [filtro, setFiltro] = useState<number | null>(null);
   return (
     <section id="main mb-4">
         <Jumbotron />

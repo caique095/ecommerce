@@ -15,7 +15,7 @@ function Header() {
               src="/IMG/Logo.svg"
               height="50"
               className="d-inline-block align-top"
-              alt="Alura geek logo"
+              alt="Logo loja bezt."
             />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

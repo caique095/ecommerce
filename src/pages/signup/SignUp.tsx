@@ -19,6 +19,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 // Yup
 import { object, string } from "yup";
 import * as yup from "yup";
+import { NOMEM } from 'dns';
 
 interface IFormInputs {
     name: string;
@@ -45,6 +46,11 @@ const schema = yup.object({
 function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const [name, setName] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [disabled, setDisabled] = useState(false);
+
     let [success, setSuccess] = useState("");
 
     const navigate = useNavigate();
@@ -59,7 +65,12 @@ function SignUp() {
 function armazenar() {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
+
+    const body = { email, name, confirmPassword, password };
+    setDisabled(true);
     
+    // if ( body ===  )
+
     }
 
   return (

@@ -48,6 +48,10 @@
     transition: all .5s;
 }
 
+#product__link{
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 800px) {
     #img-produto{
         width: 100%;

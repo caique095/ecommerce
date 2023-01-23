@@ -19,7 +19,7 @@ function Team() {
 
                     <div className="row my-3">
                         {team.map((item) => (  
-                            <div className="col-6 col-md-3">                     
+                            <div className="col-6 col-md-3" id="card-team">                     
                                 <Time key={item.nome} {...item} /> 
                             </div>
                        ))};
