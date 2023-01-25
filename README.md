@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+<h1> Projeto e-commerce feito com React.js </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Design sem nome (28)](https://user-images.githubusercontent.com/101210878/214662830-8b0a4d40-7a75-4682-8a4b-a6a20c2a56fb.svg)
 
-## Available Scripts
+<h2>📖 Descrição do projeto: </h2>
+<p> 
 
-In the project directory, you can run:
+Meu primeiro projeto usando a biblioteca React.js e o framework React-Bootstrap. <br>
+<br>Nesse projeto utilizei diversos recursos da linguagem JavaScript como o método map(), por exemplo, que foi a base para a manipulação dos produtos.
+![Design sem nome (71)](https://user-images.githubusercontent.com/101210878/214676088-b452564b-a11e-46ea-be95-f1b49bf72175.png)
 
-### `npm start`
+Utilizei no projeto a biblioteca React router dom, que é responsável por criar e manipular as rotas dentro do react, possibilitando assim a navegação entre as páginas.<br><br>
+![Design sem nome (72)](https://user-images.githubusercontent.com/101210878/214680292-bfd13ddb-0630-4094-b34c-9e3c23d208e4.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Foi criado o campo de formulários onde também usei pela primeira vez a biblioteca React hook form para a validação dos formulários, tornando eles mais eficientes e reduzindo a quantidade de códigos. E para o login, decidi explorar as funcionalidades do localStorage para armazenar e recuperar os dados do usuário, permitindo que seja feito o cadastro e login do mesmo. <br><br>
 
-### `npm test`
+![Design sem nome (68)](https://user-images.githubusercontent.com/101210878/214671136-57a4515f-0238-432a-b7da-248b33520616.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2> 🚀 Tecnologias: </h2>
+<p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <ul>
+    <li> React.js </li>
+    <li> React-Bootstrap </li>
+    <li> CSS 3 </li>
+  </ul>
+</p>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2> Link do projeto </h2>
+https://ecommerce-coral-beta-59.vercel.app/
