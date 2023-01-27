@@ -27,6 +27,7 @@ Foi criado o campo de formulários onde também usei pela primeira vez a bibliot
   <ul>
     <li> React.js </li>
     <li> React-Bootstrap </li>
+    <li> HTML 5 </li>
     <li> CSS 3 </li>
   </ul>
 </p>
