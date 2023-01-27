@@ -5,7 +5,7 @@
 <h2>📖 Descrição do projeto: </h2>
 <p> 
 
-Meu primeiro projeto usando a biblioteca React.js e o framework React-Bootstrap. <br>
+Meu primeiro projeto usando a biblioteca React.js com TypeScript e o framework React-Bootstrap. <br>
 <br>Nesse projeto utilizei diversos recursos da linguagem JavaScript como o método map(), por exemplo, que foi a base para a manipulação dos produtos.
 ![Design sem nome (71)](https://user-images.githubusercontent.com/101210878/214676088-b452564b-a11e-46ea-be95-f1b49bf72175.png)
 
@@ -29,6 +29,7 @@ Foi criado o campo de formulários onde também usei pela primeira vez a bibliot
     <li> React-Bootstrap </li>
     <li> HTML 5 </li>
     <li> CSS 3 </li>
+    <li> TypeScript </li>
   </ul>
 </p>
 
